@@ -1,0 +1,39 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container">
+
+  <div class="container1">
+  <img class= "image1" src="{% static "homepage/pngflag.png" %}" / >
+    <div class="topleft"><p class="website-name">PNG e-Judiciary Judge Support Portal</p></div>
+    <div class="bottomleft"><h4 class="website-desc">Our AI Engine <br>
+      Try out our prototype AI engine developed by <br>
+      examining hundreds of old murder cases</h4></div>
+  </div>
+
+
+  <p class="common-websites">Try It Out!</p>
+  <p style="font-size: 24px; margin: 30px;">After hitting submit there
+  may be a wait time before the results show up. Please be patient.</p>
+
+
+
+<div class="formdiv">
+
+  <textarea form="form" name="taname" rows="10" cols="145" placeholder="Enter case notes here..."></textarea>
+  <!-- changed action to "submit" from some PHP thing (action.php?)-->
+  <form action="submit" id="form" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="Submit">
+  </form>
+
+</div>
+<div name="output" style="{{ output_style }}">
+	{{output}}
+</div>
+</div>
+
+{% endblock content %}

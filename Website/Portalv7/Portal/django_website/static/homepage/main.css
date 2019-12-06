@@ -1,0 +1,298 @@
+body {
+  background: #fff;
+  color: #333333;
+  margin-top: 60px;
+}
+
+body, html{
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: Calibri;
+}
+
+header {
+  background-color: #d00000;
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 10px;
+
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+li a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+header ul{
+  margin-left: 150px;
+}
+
+footer{
+      position: static;
+      overflow: hidden;
+      margin-bottom: 0;
+      height: 155px;
+      background-color: #151515;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      text-align: center;
+}
+
+.footerp{
+  float: left;
+  color: white;
+  font-size: 16px;
+}
+
+.container{
+  position: relative;
+  max-width: 1200px;
+  height: 100%;
+
+}
+
+.image {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    filter: brightness(80%);
+}
+
+.topleft {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: auto;
+  height: auto;
+}
+
+.topleft1 {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: auto;
+  height: auto;
+}
+
+.topleft2 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: auto;
+  height: auto;
+}
+
+.website-name{
+  font-weight: bold;
+  color: white;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.common-websites{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 30px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: auto;
+  height: auto;
+}
+
+.bottomleft1 {
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  width: auto;
+  height: auto;
+}
+
+.website-desc{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  position: relative;
+}
+
+
+.row {
+  margin: 20px -5px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.col1{
+  position: relative;
+  display: block;
+  float: left;
+width: 65%;
+height: auto;
+
+}
+
+.col2{
+  position: relative;
+  float: right;
+  width: 31%;
+  height: auto;
+display: inline;
+margin-right: 4px;
+margin-bottom: 23px;
+}
+
+.title1{
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.para1{
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.container1{
+  height: 500px;
+  width: 100%;
+  object-fit: fill;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.image1 {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    object-fit: fill;
+    overflow: hidden;
+    filter: brightness(80%);
+    position: relative;
+
+}
+
+.fc1 {
+  display: inline-block;
+  float: left;
+  height: 160px;
+  width: 33.33%;
+  padding-left: 10px;
+  padding-top: 5px;
+
+}
+
+
+.footerp1 {
+  text-align: justify;
+  font-size: 32px;
+  color: white;
+}
+
+.ful{
+  display: block;
+  list-style: none;
+  font-size: opx;
+}
+
+.flist{
+  color: white;
+padding: 0px;
+display: inline;
+font-size:14px;
+}
+
+input[type=submit]{
+  background-color: #d00000;
+   border: none;
+   color: white;
+   padding: 8px 20px;
+   text-decoration: none;
+   margin: 8px 4px;
+   cursor: pointer;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   align-self: center;
+}
+
+.formdiv{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.column1 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  position: relative;
+  margin: 20px;
+}

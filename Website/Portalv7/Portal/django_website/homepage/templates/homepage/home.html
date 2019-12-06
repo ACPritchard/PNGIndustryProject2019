@@ -1,0 +1,69 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container1">
+  <img class= "image1" src="{% static "homepage/pngflag.png" %}" / >
+  <div class="topleft"><p class="website-name">PNG e-Judiciary Judge Support Portal</p></div>
+  <div class="bottomleft"><h4 class="website-desc">Welcome to the Pilot e-Judiciary Support Portal. <br>
+    This website links to useful resources for judiciary stakeholders in the Pacific. </h4></div>
+</div>
+
+<p class="common-websites">Useful Resources</p>
+
+
+<div class="container">
+  <div class="col1" style="">
+    <a href="http://www.paclii.org/countries/pg.html" target="_blank">
+    <img class= "image1" style="filter: brightness(60%);" src="{% static "homepage/paclii.PNG" %}" / >
+    </a>
+    <div class="topleft1"><p class="title1">Pacific Islands Legal Information Institute</p></div>
+    <div class="bottomleft1"><p class="para1">PACLII offers a variety of links to databases with legal records</p></div>
+  </div>
+  <div class="col2">
+    <a href="http://www.pngjudiciary.gov.pg/" target="_blank">
+    <img class= "image" style="filter: brightness(60%);" src="{% static "homepage/pngjudiciary.PNG" %}" / >
+    </a>
+    <div class="topleft1"><p class="title1">PNG Judiciary</p></div>
+    <div class="bottomleft1"><p class="para1">National and Supreme Courts of Papua New Guinea</p></div>
+  </div>
+  <div class="col2">
+    <a href="http://www.paclii.org/pg/cases/PGSC/" target="_blank">
+    <img class= "image" style="filter: brightness(60%);" src="{% static "homepage/supremecourt.PNG" %}" / >
+    </a>
+    <div class="topleft1"><p class="title1">Supreme Court of Papua New Guinea</p></div>
+    <div class="bottomleft1"><p class="para1">Database containing decisions made by Papua New Guinea Supreme Court</p></div>
+  </div>
+</div>
+
+<div style="clear:both"></div>
+
+<p class="common-websites">Other Relavant Resources</p>
+
+
+<div class="row">
+  <div class="column">
+    <a href="http://www.paclii.org/pg/cases/PGNC/" target="_blank">
+    <img class= "image" style="filter: brightness(60%);" src="{% static "homepage/nationalcourt.PNG" %}" / >
+    </a>
+    <div class="topleft2"><p class="title1">National Court of Papua New Guinea</p></div>
+    <div class="card">Database containing decisions made by Papua New Guinea National Court</div>
+  </div>
+  <div class="column">
+    <a href="http://www.paclii.org/pg/rules/ct_rules/" target="_blank">
+    <img class= "image" style="filter: brightness(60%);" src="{% static "homepage/courtrules.PNG" %}" / >
+    </a>
+    <div class="topleft2"><p class="title1">Papua New Guinea Court Rules</p></div>
+    <div class="card">Database containing the Court Rules of Papua New Guinea</div>
+  </div>
+  <div class="column">
+    <a href="http://www.paclii.org/pg/cases/PGDC/" target="_blank">
+    <img class= "image" style="filter: brightness(60%);" src="{% static "homepage/districtcourt.PNG" %}" / >
+    </a>
+    <div class="topleft2"><p class="title1">Papua New Guinea District Court</p></div>
+    <div class="card">Database containing decisions made by Papua New Guinea District Court</div>
+  </div>
+</div>
+
+{% endblock content %}
